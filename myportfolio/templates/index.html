@@ -1,0 +1,191 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucy Wangeci - Portfolio</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{%static 'css/portfolio2.css'%}">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typed.js@2.0.12@typed.css">
+
+    <style>
+
+        .navbar-nav a.nav-link:hover {
+            color: #fff;
+        }
+        .carousel-caption {
+            font-size: 24px;
+            text-align: center;
+        }
+        h2 {
+            color: #490849;
+        }
+        .typed-text {
+            color: #0c7bf5;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- Navigation Menu -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="https://github.com/Lucywangeci">Lucy Wangeci</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#slider">Home <span class="sr-only"></span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#languages">Languages</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
+<!-- Slider Section -->
+<div id="slider" class="container-fluid">
+    <div id="mySlider" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="{% static 'images/cafe.PNG' %}" class="d-block w-80 alt=" mission">
+                <div class="carousel-caption">
+                    <h3 >Welcome to Lucy Wangeci's Portfolio</h3>
+                    <p>Your Success is my Mission</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="{% static 'images/beauty1.PNG' %}" class="d-block w-80" alt="vision">
+                <div class="carousel-caption">
+                    <h3>My Vision</h3>
+                    <p>To Create Exceptional Web Solutions</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="{% static 'images/beauty2.PNG' %}" class="d-block w-80" alt="hire me">
+                <div class="carousel-caption">
+                    <h3>Why You Should Hire Me</h3>
+                    <p>I am a dedicated web developer with expertise in various programming languages. I am committed to bringing your ideas to life and delivering outstanding web solutions that meet your needs. Let's collaborate and make your digital dreams a reality.</p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#mySlider" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#mySlider" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+
+<!-- About Section with Image and Animated Text -->
+<section id="about" class="container py-5">
+    <div class="row">
+        <div class="col-md-6">
+            <img src="{% static 'images/portfolioimg.jpg' %}" alt="Lucy Wangeci" class="img-fluid rounded-circle">
+        </div>
+        <div class="col-md-6">
+            <h2>About Me</h2>
+            <p>Hi, I'm Lucy Wangeci. I am a web developer with a passion for creating beautiful and functional websites. I'm proficient in both English and Kiswahili, and I enjoy turning ideas into digital reality.</p>
+            <div class="animated-text">
+                <p>
+                    I have knowledge in: <span class="typed-text"></span><span class="cursor">&nbsp;</span>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Languages Section -->
+<section id="languages" class="container py-5">
+    <h2>Languages</h2>
+    <p>I can confidently speak and write in English and Kiswahili, making me an effective communicator in both languages.</p>
+</section>
+
+<!-- Services Section  -->
+<section id="services" class="container py-5">
+    <h2>Services</h2>
+    <p>As a web developer, I offer a wide range of services, including:</p>
+    <ul>
+        <li>Website Design and Development</li>
+        <li>Responsive Web Design</li>
+        <li>Custom Web Applications</li>
+        <li>E-commerce Solutions</li>
+        <li>Website Maintenance</li>
+    </ul>
+</section>
+
+<!-- Contact Section  -->
+<section id="contact" class="container py-5">
+    <h2>Contact Me</h2>
+    <p>If you have any questions or project inquiries, please feel free to reach out to me via email:</p>
+    <p>Email: <a href="mailto:t9964048@gmail.com">t9964048@gmail.com</a></p>
+    <div class="row">
+        <div class="col-md-6">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d7977.671348173479!2d36.8110069!3d-1.2716529!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2ske!4v1697427203444!5m2!1sen!2ske" width="400" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="col-md-6">
+            <h3>For any enquiries or comments, please fill in this form</h3>
+            <form>
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" id="message" rows="5" placeholder="Your message..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-light text-center py-3">
+    &copy; 2023 Lucy Wangeci - All Rights Reserved
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- Add Typed.js Script -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const options = {
+            strings: ["c-sharp", "Java and Java frameworks", "Javascript", "HTML, CSS and Bootstrap", "SQL and database maintenance", "UI/UX design"],
+            typeSpeed: 100,
+            backSpeed: 50,
+            backDelay: 2000,
+            loop: true
+        };
+        const typed = new Typed(".typed-text", options);
+    });
+</script>
+</body>
+</html>

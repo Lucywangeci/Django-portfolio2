@@ -1,0 +1,43 @@
+{% extends 'layout.html' %}
+
+{% block  %}
+
+<!-- About Section with Image and Animated Text -->
+<section id="about" class="container py-5">
+    <div class="row">
+        <div class="col-md-6">
+            <img src="{% static 'images/portfolioimg.jpg' %}" alt="Lucy Wangeci" class="img-fluid rounded-circle">
+        </div>
+        <div class="col-md-6">
+            <h2>About Me</h2>
+            <p>Hi, I'm Lucy Wangeci. I am a web developer with a passion for creating beautiful and functional websites. I'm proficient in both English and Kiswahili, and I enjoy turning ideas into digital reality.</p>
+            <div class="animated-text">
+                <p>
+                    I have knowledge in: <span class="typed-text"></span><span class="cursor">&nbsp;</span>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- Add Typed.js Script -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const options = {
+            strings: ["c-sharp", "Java and Java frameworks", "Javascript", "HTML, CSS and Bootstrap", "SQL and database maintenance", "UI/UX design"],
+            typeSpeed: 100,
+            backSpeed: 50,
+            backDelay: 2000,
+            loop: true
+        };
+        const typed = new Typed(".typed-text", options);
+    });
+</script>
+
+
+{% endblock %}

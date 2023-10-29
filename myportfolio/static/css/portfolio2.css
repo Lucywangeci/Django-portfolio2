@@ -1,0 +1,90 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.hero{
+  position: relative;
+  width: 100%;
+  height: 100vw;
+  background: aliceblue;
+}
+nav{
+  display: flex;
+  width: 84%;
+  margin: auto;
+  padding: 20px 0;
+  align-items: center;
+  justify-content: space-between;
+}
+nav ul li{
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+nav ul li a{
+  text-decoration: none;
+  color: #222222;
+  font-weight: bold;
+}
+
+
+/* Reset default margin and padding for the ul and li elements */
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the navigation */
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #333; /* Background color for the navigation bar */
+  padding: 10px 20px; /* Add some padding to the navigation bar */
+}
+
+/* Style the list items (navigation links) */
+li {
+  margin-left: 20px; /* Add spacing between the list items */
+}
+
+/* Style the links */
+a {
+  text-decoration: none;
+  color: #fff; /* Text color for the links */
+  font-weight: bold; /* Make the text bold */
+  transition: color 0.3s; /* Add a smooth color transition on hover */
+}
+
+/* Apply a hover effect */
+a:hover {
+  color: #ff9900; /* Text color on hover */
+}
+
+/* Style the logo image */
+.logo {
+  max-width: 50px; /* Limit the maximum width of the logo */
+  height: auto; /* Maintain the aspect ratio */
+  margin-right: 20px; /* Add spacing to the right of the logo */
+}
+
+/* Add some styles for the "hero" container (you can adjust as needed) */
+.hero {
+  background-color: #f0f0f0; /* Background color for the hero section */
+  padding: 20px; /* Add some padding to the hero section */
+}
+
+/* Center the hero content */
+.nav ul {
+  display: flex;
+  align-items: center;
+}
+
+
